@@ -31,8 +31,19 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="input-group mb-3">
+          <span class="input-group-text">$</span>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Amount (to the nearest dollar)"
+          />
+          <button class="btn saveBtn"></button>
+        </div>
+      </div>
     </div>
+    <!-- Timeblocks go here -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
