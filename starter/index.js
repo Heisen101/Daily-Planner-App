@@ -8,27 +8,19 @@ function checkTime() {
 
   const currentTime = dayjs().hour();
   console.log(currentTime);
-  //   const valueV = $(".number").data("value");
-  //   console.log(valueV);
 
   //eaterating over data value inside conainer to compare the data value with the time and sett the class acordinly to the time
   $(".row").each(function () {
     var TimeT = parseInt($(this).find(".number").attr("data-value")); //targeting id inside container and prase it into a number
-    // TimeT = TimeT.split("-")[0];
-    // var newT = parseInt(TimeT);
 
-    console.log(TimeT);
-    var colorChange = $(this).find(".form-control");
+    var colorChange = $(this).find(".form-control"); //targts the input area where color will be displayed
     if (TimeT === currentTime) {
-      colorChange.addClass("present");
+      colorChange.addClass("present"); //class be present if times are equal
     } else if (TimeT < currentTime) {
-      colorChange.addClass("past");
+      colorChange.addClass("past"); //class past if time passed
     } else {
-      colorChange.addClass("future");
+      colorChange.addClass("future"); //class future if time not arrived
     }
-
-    // return TimeT;
-    // console.log(newT);
   });
 }
 checkTime();
