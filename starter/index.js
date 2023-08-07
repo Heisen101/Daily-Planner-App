@@ -1,3 +1,6 @@
+//create element that will display day
+var today = dayjs();
+$("#currentDay").text(today.format("dddd, D MMMM  YYYY"));
 //create function that sets data js for each p elment in Schedul
 
 $(document).ready(function () {
@@ -5,8 +8,7 @@ $(document).ready(function () {
 
   const currentTime = dayjs();
   console.log(currentTime);
-  const curr = document.getElementById("ws");
-  const valueV = curr.getAttribute("data-value");
+  const valueV = $(".number").data("value");
   console.log(valueV);
 
   // Set the target time (e.g., 12 PM)
@@ -15,6 +17,6 @@ $(document).ready(function () {
   // Check if the current time is after the target time
   if (currentTime > valueV) {
     // If it's past 12 PM, add the "future" class to the elements with the "hour" class
-    $("#inp").addClass("past");
+    $(".inp").addClass("present");
   }
 });
