@@ -32,5 +32,7 @@ checkTime();
 var saveBt = $(".saveBtn");
 saveBt.on("click", function () {
   var textA = $(this).closest(".row").find(".form-control"); //finding input area and storing in textA
-  var inputValue = textA.val("");
+  var inputValue = textA.val(); //will store the input value from user
+  var timeTarget = $(this).closest(".row").find(".number").attr("data-value"); //this will know what line of html to store from
+  localStorage.setItem(timeTarget, inputValue);
 });
