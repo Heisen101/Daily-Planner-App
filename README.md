@@ -1,6 +1,3 @@
-Certainly! Here's the same README content in Markdown format, which is commonly used for creating README files:
-
-```markdown
 # Work Day Scheduler
 
 ## Description
@@ -48,6 +45,3 @@ Contributions are welcome! To report issues or contribute, please open an issue 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-```
-
-You can copy and paste this Markdown code into your README.md file in your project repository.
