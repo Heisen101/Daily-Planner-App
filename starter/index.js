@@ -1,6 +1,6 @@
 var textInp = document.querySelectorAll(".form-control");
 var pElement = $(".hide1");
-// console.log(pElement);
+
 //create element that will display day
 var today = dayjs();
 $("#currentDay").text(today.format("dddd, D MMMM  YYYY,"));
