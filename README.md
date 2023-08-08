@@ -30,12 +30,22 @@ Work Day Scheduler is a simple calendar app for scheduling your work day. It pro
 
 1. Upon opening the app, you'll see the current day and time blocks representing each hour from 9 AM to 5 PM.
 2. Time blocks are color-coded:
+
    - Gray: Past hours
    - Red: Current hour
    - Green: Future hours
+
+     ![first](./images/first.png)
+
 3. Click an input field for a specific hour to add an appointment or task.
+
+   ![second](./images/second.png)
+
 4. After entering the appointment, click the "Save" button next to the input field to save the appointment.
 5. A notification will briefly appear if the save is successful.
+
+   ![third](./images/third.png)
+
 6. Saved appointments persist even after refreshing the page.
 
 ## Contributing
