@@ -78,3 +78,15 @@ header {
 .hide1 {
   display: none;
 }
+#local {
+  font-style: italic;
+  color: #ff6961;
+}
+#localStorrage {
+  padding: 1px;
+  background-color: #d3d3d3;
+}
+#inline1 {
+  display: flex;
+  justify-content: center;
+}

@@ -47,4 +47,7 @@ for (i = 0; i < localStorage.length; i++) {
 // when button pressed p element with text "Saved in local Storage" appear and after 1 sec will disapear"
 saveBt.on("click", function () {
   pElement.show();
+  setTimeout(function () {
+    pElement.hide();
+  }, 1000);
 });
