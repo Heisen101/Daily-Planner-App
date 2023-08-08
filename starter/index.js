@@ -1,6 +1,6 @@
 var textInp = document.querySelectorAll(".form-control");
 var pElement = $(".hide1");
-console.log(pElement);
+// console.log(pElement);
 //create element that will display day
 var today = dayjs();
 $("#currentDay").text(today.format("dddd, D MMMM  YYYY,"));
@@ -44,3 +44,7 @@ for (i = 0; i < localStorage.length; i++) {
   var key = localStorage.key(i); //will target the key name
   var event = localStorage.getItem(key);
 }
+// when button pressed p element with text "Saved in local Storage" appear and after 1 sec will disapear"
+saveBt.on("click", function () {
+  pElement.show();
+});
