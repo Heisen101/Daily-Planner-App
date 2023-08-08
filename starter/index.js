@@ -1,5 +1,6 @@
 var textInp = document.querySelectorAll(".form-control");
-
+var pElement = $(".hide1");
+console.log(pElement);
 //create element that will display day
 var today = dayjs();
 $("#currentDay").text(today.format("dddd, D MMMM  YYYY,"));
@@ -27,7 +28,7 @@ function checkTime() {
 }
 checkTime();
 
-//save event in localStorage
+//save event in localStorage when click on button event happens
 
 var saveBt = $(".saveBtn");
 saveBt.on("click", function () {
@@ -36,3 +37,10 @@ saveBt.on("click", function () {
   var timeTarget = $(this).closest(".row").find(".number").attr("data-value"); //this will know what line of html to store from
   localStorage.setItem(timeTarget, inputValue);
 });
+
+//Events to persist on input area even after pager refreshed
+
+for (i = 0; i < localStorage.length; i++) {
+  var key = localStorage.key(i); //will target the key name
+  var event = localStorage.getItem(key);
+}
