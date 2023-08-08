@@ -1,3 +1,5 @@
+var textInp = document.querySelectorAll(".form-control");
+
 //create element that will display day
 var today = dayjs();
 $("#currentDay").text(today.format("dddd, D MMMM  YYYY,"));
@@ -24,3 +26,11 @@ function checkTime() {
   });
 }
 checkTime();
+
+//save event in localStorage
+
+var saveBt = $(".saveBtn");
+saveBt.on("click", function () {
+  var textA = $(this).closest(".row").find(".form-control"); //finding input area and storing in textA
+  var inputValue = textA.val("");
+});
